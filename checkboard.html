@@ -110,31 +110,7 @@
 
 </div>
 
-<script>
-    'use strict';
 
-    var board = document.getElementById('checker-board');
-    var redCheckers = [];
-    var blackCheckers = [];
-
-    for (var i = 1; i <= 12; i = i + 1) {
-        var redChecker = document.getElementById('red-checker-' + i);
-        var blackChecker = document.getElementById('black-checker-' + i);
-
-        var col = (i - 1) % 4;
-        var row = Math.floor((i - 1) / 4);
-
-        redChecker.style.top = 50 + 50 * row - 45;
-        redChecker.style.left = 100 + 100 * col - 95 + (row === 1 ? 50 : 0);
-
-        blackChecker.style.top = 310 - (50 * row - 45);
-        blackChecker.style.left = 100 + 100 * col - 95 + (row !== 1 ? 50 : 0);
-
-        redCheckers.push(redChecker);
-        blackCheckers.push(blackChecker);
-    }
-
-</script>
 </body>
 </html>
 
